@@ -13,7 +13,13 @@
           <router-link to="/products" class="nav-link" active-class="active"
             >Products</router-link
           >
-        </li>       
+        </li>   
+        <li class="nav-item">
+          <!-- add a router link to the login page (don't use the a tag!) -->
+          <router-link to="/login" class="nav-link" active-class="active"
+            >Login</router-link
+          >
+        </li>     
       </ul>
     </div>
   </nav>

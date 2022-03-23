@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import axios from 'axios';
+import axios from '../../axios-auth';
 
 export default {
   name: "ProductListItem",
@@ -33,7 +33,7 @@ export default {
   },
   methods: {
     deleteProduct(id) {
-      axios.delete("http://localhost/products/" + id)
+      axios.delete("/products/" + id)
       .then(result => {
           console.log(result);
           this.$emit("update");
